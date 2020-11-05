@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+
+/*   margin-left: auto;
+  margin-right: auto; */
+  margin: 0;
+  padding: 0;
+
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(/Lora-Medium.ttf);
+}
+@font-face {
+  font-family: Playfair Display;
+  src: url(/PlayfairDisplay-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', serif;
+}
+p,
+li {
+  font-family: 'Lora', serif;
+  align-self: center;
+}
+a {
+  color: rgb(65, 16, 16);
+  text-decoration: double;
+}
+
+.header-info {
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+  top: 5%;
+  left: 40%;
+}
+
+.avatar-container {
+  position: absolute;
+  justify-self: flex-start;
+  background-color: rgba(255, 0, 0, 0.568);
+  border-radius: 100% 0 100% 0;
+
+  width: 200%;
+  z-index: -1;
+
+  left: -40%;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 100%;
+}
+
+.self-information-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+
+  top: 15%;
+  left: 30%;
+}
+.education, .projects {
+  margin: 3% 0 0 0;
+}
+
+.aside-info {
+  position: absolute;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+  top: 5vh;
+  left: 8vh;
+  width: 180px;
+}
+.all-skills-info {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 20px;
+  width: 100%;
+}
+.skills{
+  align-self: flex-start;
+  padding-top: 0.8vh;
+}
+#soft-skills {
+  order: 1;
+}
+#skills {
+  order: 2;
+}
+#languages {
+  order: 3;
+}
+.rating-container {
+  display: flex;
+  flex-direction: row;
+}
+.rating {
+  display: flex;
+
+  margin: 5px;
+
+  height: 10px;
+  width: 10px;
+
+  border-radius: 50%;
+}
+#grey {
+  background-color: #bbb;
+}
+#yellow {
+  background-color: darksalmon;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+}
+
+
+@media print {   
+  #header, #footer, #nav { display: none !important; } 
+ }
